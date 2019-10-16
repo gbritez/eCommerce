@@ -1,0 +1,33 @@
+<div class="checkout">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+            </div>
+            <!-- Product -->
+            <div class="col-lg-6">
+                <div class="billing">
+                    <div class="checkout_title">Product</div>
+                    <div class="checkout_form_container">
+                        <form [formGroup]="productForm" (ngSubmit)="submitForm()" class="checkout_form" novalidate>
+                            <label>Name</label>
+                            <input type="text" formControlName="name" class="form-control" placeholder="Product Name"
+                                aria-describedby="helpName">
+                            <small class="text-muted">Help text</small>
+                            <div *ngIf="productForm.get('name').errors && productForm.get('name').dirty">
+                                <p class="alert-danger" *ngIf="productForm.get('name').hasError('required')">This
+                                    field
+                                    is required</p>
+                            </div>
+                            <div>
+                                <button type="submit">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+</div>

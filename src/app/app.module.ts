@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { OwlModule } from 'ngx-owl-carousel';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import * as $ from 'jquery';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { ProductDetailComponent } from './Components/product-detail/product-deta
 import { BoxComponent } from './Components/box/box.component';
 import { CarouselComponent } from './Components/carousel/carousel.component';
 import { SliderComponent } from './Components/slider/slider.component';
+import { ProductFormComponent } from './Components/product-form/product-form.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,15 @@ import { SliderComponent } from './Components/slider/slider.component';
     ProductDetailComponent,
     BoxComponent,
     CarouselComponent,
-    SliderComponent
+    SliderComponent,
+    ProductFormComponent,
   ],
   imports: [
     BrowserModule,
     OwlModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
