@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eCommerceAPI.Common
+namespace eCommerceAPI.Business
 {
   public class Class1
   {

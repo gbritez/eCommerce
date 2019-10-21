@@ -1,21 +1,22 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using eCommerceAPI.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerceAPI.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]/[action]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
         // GET: api/Product
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<IEnumerable<ProductModel>> Get()
         {
-            return new string[] { "value1", "value2" };
+      return Ok();
         }
 
         // GET: api/Product/5

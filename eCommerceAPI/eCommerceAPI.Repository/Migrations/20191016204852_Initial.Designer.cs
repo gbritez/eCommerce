@@ -9,7 +9,7 @@ using eCommerceAPI.Repository;
 namespace eCommerceAPI.Repository.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20191016181424_Initial")]
+    [Migration("20191016204852_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

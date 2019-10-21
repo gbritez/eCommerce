@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20191016180619_Initial.cs" />
-    <Compile Remove="Migrations\20191016180619_Initial.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
@@ -20,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eCommerceAPI.Common\eCommerceAPI.Common.csproj" />
+    <ProjectReference Include="..\eCommerceAPI.Common\eCommerceAPI.Entities.csproj" />
   </ItemGroup>
 
 </Project>

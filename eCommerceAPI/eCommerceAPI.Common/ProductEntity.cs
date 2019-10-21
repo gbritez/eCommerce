@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace eCommerceAPI.Common
+namespace eCommerceAPI.Entities
 {
   public enum Sizes
   {
@@ -20,7 +20,7 @@ namespace eCommerceAPI.Common
     Kids,
     HomeDeco
   }
-  public class ProductModel
+  public class ProductEntity
   {
     public int Id { get; set; }
     public string Name { get; set; }
