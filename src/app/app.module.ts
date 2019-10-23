@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { OwlModule } from 'ngx-owl-carousel';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,7 @@ import { ProductFormComponent } from './Components/product-form/product-form.com
     ProductFormComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     OwlModule,
     AppRoutingModule,
