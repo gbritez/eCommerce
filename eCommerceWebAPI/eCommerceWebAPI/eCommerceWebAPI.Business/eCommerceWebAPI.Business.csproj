@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eCommerceWebAPI.Entities\eCommerceWebAPI.Entities.csproj" />
+    <ProjectReference Include="..\eCommerceWebAPI.Repository\eCommerceWebAPI.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
